@@ -1,3 +1,7 @@
+body {
+  --primary-color: #ff3030;
+}
+
 .überschrift {
   font-family: "Lobster", sans-serif;
   font-size: 3rem;
@@ -24,9 +28,9 @@
   background-position: center center;
 }
 .pseudobutton {
-  background-color: rgb(212, 34, 34);
+  background-color: var(--primary-color);
   padding: 10px;
-  border: 1px solid red;
+  border: 1px solid var(--primary-color);
   font-size: 1rem;
   color: white;
   margin-top: 3rem;
@@ -64,14 +68,14 @@ a {
 }
 
 .nav1 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: white;
   margin-top: 1%;
   letter-spacing: 0.1rem;
 }
 .nav1:hover {
-  font-size: 1rem;
-  color: red;
+  font-size: 0.8rem;
+  color: var(--primary-color);
   transition: color 0.5s ease-out;
   margin-top: 1%;
 }
@@ -85,7 +89,7 @@ a {
   }
   .pseudobutton {
     padding: 15px;
-    border: 1px solid red;
+    border: 1px solid var(--primary-color);
     font-size: 1.25rem;
   }
   .pseudobutton:hover {
@@ -93,10 +97,10 @@ a {
     font-size: 1.25rem;
   }
   .nav1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .nav1:hover {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -109,7 +113,7 @@ a {
   }
   .pseudobutton {
     padding: 15px;
-    border: 1px solid red;
+    border: 1px solid var(--primary-color);
     font-size: 1.5rem;
   }
   .pseudobutton:hover {
@@ -122,6 +126,9 @@ a {
   }
   .nav1:hover {
     font-size: 1.5rem;
+  }
+  .nav {
+    gap: 10rem;
   }
 }
 @media screen and (min-width: 451px) {
