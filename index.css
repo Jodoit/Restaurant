@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 94vh;
   justify-content: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
     url("./picture/hero.jpg");
@@ -37,6 +37,7 @@
   font-size: 1rem;
   color: white;
   transition: background-color 0.5s ease-out;
+  margin-top: 3rem;
 }
 
 .pseudobuttontext {
@@ -47,53 +48,93 @@
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
 }
-@media (max-width: 1000px) {
+.nav {
+  background-color: rgb(33, 32, 32);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 6vh;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+
+.aboutus,
+.meals,
+.opening {
+  font-size: 1rem;
+  color: white;
+  margin-top: 1%;
+}
+.aboutus:hover,
+.meals:hover,
+.opening:hover {
+  font-size: 1rem;
+  color: red;
+  transition: color 0.5s ease-out;
+  margin-top: 1%;
+}
+@media screen and (min-width: 800px) {
+  .überschrift {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
   .überschrift2 {
-    top: 60%;
+    font-size: 1.25rem;
+  }
+  .pseudobutton {
+    padding: 15px;
+    border: 1px solid red;
+    font-size: 1.25rem;
+  }
+  .pseudobutton:hover {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
+  .aboutus,
+  .meals,
+  .opening {
+    font-size: 1.25rem;
+  }
+  .aboutus:hover,
+  .meals:hover,
+  .opening:hover {
+    font-size: 1.25rem;
   }
 }
-
-@media (max-width: 851px) {
+@media screen and (min-width: 1200px) {
+  .überschrift {
+    line-height: 5.5rem;
+    font-size: 5rem;
+  }
   .überschrift2 {
-    top: 60%;
+    font-size: 1.5rem;
   }
-}
-
-@media (max-width: 850px) {
-  .überschrift2 {
-    top: 58%;
-  }
-}
-
-@media (max-width: 550px) {
-  .überschrift2 {
-    top: 55%;
-  }
-}
-@media (max-width: 1000px) {
   .pseudobutton {
-    top: 62%;
+    padding: 15px;
+    border: 1px solid red;
+    font-size: 1.5rem;
+  }
+  .pseudobutton:hover {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+  .aboutus,
+  .meals,
+  .opening {
+    font-size: 1.5rem;
+    margin-top: 1%;
+  }
+  .aboutus:hover,
+  .meals:hover,
+  .opening:hover {
+    font-size: 1.5rem;
   }
 }
-
-@media (max-width: 851px) {
-  .pseudobutton {
-    top: 62%;
-  }
-}
-
-@media (max-width: 850px) {
-  .pseudobutton {
-    top: 60%;
-  }
-}
-
-@media (max-width: 550px) {
-  .pseudobutton {
-    top: 57%;
+@media screen and (min-width: 451px) {
+  .zeilenumbruch {
+    display: none;
   }
 }
