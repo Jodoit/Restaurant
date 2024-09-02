@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 4rem);
   justify-content: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
     url("./picture/hero.jpg");
@@ -60,7 +60,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  height: 5rem;
+  height: 4rem;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -78,6 +78,29 @@ a {
   transition: color 0.5s ease-out;
   margin-top: 1%;
 }
+
+.about {
+  background-color: rgba(6, 6, 6, 0.909);
+  color: aliceblue;
+  height: 60vh;
+  align-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 1.5rem;
+}
+h2 {
+  text-transform: uppercase;
+  text-decoration: underline var(--primary-color);
+  font-size: 2rem;
+}
+.abouttext {
+  width: 50%;
+}
+.aboutimg {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 800px) {
   .überschrift {
     font-size: 4rem;
