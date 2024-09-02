@@ -54,24 +54,22 @@ a {
 .nav {
   background-color: rgb(33, 32, 32);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 3rem;
   height: 6vh;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  align-items: center;
 }
 
-.aboutus,
-.meals,
-.opening {
+.nav1 {
   font-size: 1rem;
   color: white;
   margin-top: 1%;
+  letter-spacing: 0.1rem;
 }
-.aboutus:hover,
-.meals:hover,
-.opening:hover {
+.nav1:hover {
   font-size: 1rem;
   color: red;
   transition: color 0.5s ease-out;
@@ -94,14 +92,10 @@ a {
     padding: 10px;
     font-size: 1.25rem;
   }
-  .aboutus,
-  .meals,
-  .opening {
+  .nav1 {
     font-size: 1.25rem;
   }
-  .aboutus:hover,
-  .meals:hover,
-  .opening:hover {
+  .nav1:hover {
     font-size: 1.25rem;
   }
 }
@@ -122,15 +116,11 @@ a {
     padding: 15px;
     font-size: 1.5rem;
   }
-  .aboutus,
-  .meals,
-  .opening {
+  .nav1 {
     font-size: 1.5rem;
     margin-top: 1%;
   }
-  .aboutus:hover,
-  .meals:hover,
-  .opening:hover {
+  .nav1:hover {
     font-size: 1.5rem;
   }
 }
