@@ -12,7 +12,7 @@ body {
 .überschrift2 {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  color: white;
+  color: rgb(212, 206, 206);
 }
 .hero {
   display: flex;
@@ -82,11 +82,15 @@ a {
 .about {
   background-color: rgba(6, 6, 6, 0.909);
   color: aliceblue;
-  height: 60vh;
+  height: 100vh;
   align-content: center;
   padding-left: 5rem;
   padding-right: 5rem;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 h2 {
   text-transform: uppercase;
@@ -94,11 +98,9 @@ h2 {
   font-size: 2rem;
 }
 .abouttext {
-  width: 50%;
+  color: rgb(212, 206, 206);
 }
 .aboutimg {
-  display: flex;
-  align-items: center;
 }
 
 @media screen and (min-width: 800px) {
