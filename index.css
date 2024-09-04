@@ -1,5 +1,12 @@
 body {
+  background-color: #1a1a1a;
   --primary-color: #ff3030;
+  --text-color: rgb(212, 206, 206);
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .überschrift {
@@ -12,7 +19,7 @@ body {
 .überschrift2 {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  color: rgb(212, 206, 206);
+  color: var(--text-color);
 }
 .hero {
   display: flex;
@@ -27,21 +34,27 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.pseudobutton {
+.button {
+  display: inline-block;
   background-color: var(--primary-color);
   padding: 10px;
   border: 1px solid var(--primary-color);
   font-size: 1rem;
   color: white;
-  margin-top: 3rem;
 }
-.pseudobutton:hover {
+.button:hover {
   background-color: transparent;
   padding: 10px;
   font-size: 1rem;
   color: white;
   transition: background-color 0.5s ease-out;
+}
+.pseudobutton1 {
   margin-top: 3rem;
+}
+.pseudobutton2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .pseudobuttontext {
@@ -64,43 +77,57 @@ a {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  align-items: center;
 }
 
 .nav1 {
   font-size: 0.8rem;
   color: white;
   letter-spacing: 0.1rem;
+  margin-top: 1.5rem;
 }
 .nav1:hover {
   font-size: 0.8rem;
   color: var(--primary-color);
   transition: color 0.5s ease-out;
-  margin-top: 1%;
+  margin-top: 1.5rem;
 }
 
 .about {
-  background-color: rgba(6, 6, 6, 0.909);
-  color: aliceblue;
-  height: 100vh;
-  align-content: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  display: grid;
 }
-h2 {
+.heading {
   text-transform: uppercase;
   text-decoration: underline var(--primary-color);
   font-size: 2rem;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .abouttext {
-  color: rgb(212, 206, 206);
+  color: var(--text-color);
 }
+.öffnungszeiten {
+}
+
+.aboutimgs {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
 .aboutimg {
+  width: 100%;
+  height: 100%;
+}
+
+.about-img-large {
+  min-width: 50%;
+}
+
+.about-img-small {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -111,13 +138,13 @@ h2 {
   .überschrift2 {
     font-size: 1.25rem;
   }
-  .pseudobutton {
-    padding: 15px;
+  .button {
+    padding: 1rem;
     border: 1px solid var(--primary-color);
     font-size: 1.25rem;
   }
-  .pseudobutton:hover {
-    padding: 10px;
+  .button:hover {
+    padding: 1rem;
     font-size: 1.25rem;
   }
   .nav1 {
@@ -125,6 +152,9 @@ h2 {
   }
   .nav1:hover {
     font-size: 1rem;
+  }
+  .abouttext {
+    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -135,18 +165,10 @@ h2 {
   .überschrift2 {
     font-size: 1.5rem;
   }
-  .pseudobutton {
-    padding: 15px;
-    border: 1px solid var(--primary-color);
-    font-size: 1.5rem;
-  }
-  .pseudobutton:hover {
-    padding: 15px;
-    font-size: 1.5rem;
-  }
+
   .nav1 {
     font-size: 1.5rem;
-    margin-top: 1%;
+    margin-top: 1.5rem;
   }
   .nav1:hover {
     font-size: 1.5rem;
@@ -154,9 +176,23 @@ h2 {
   .nav {
     gap: 10rem;
   }
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .about {
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (min-width: 451px) {
   .zeilenumbruch {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
   }
 }
