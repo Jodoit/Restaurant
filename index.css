@@ -144,15 +144,18 @@ a {
   background-position: center center;
 }
 .opening {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .days {
   color: var(--text-color);
   font-size: 2rem;
+  width: 5rem;
 }
 .time {
   color: white;
   font-size: 2rem;
+  width: 10rem;
 }
 
 @media screen and (min-width: 800px) {
