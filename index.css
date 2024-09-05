@@ -28,7 +28,7 @@ body {
   text-align: center;
   height: calc(100vh - 4rem);
   justify-content: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./picture/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,8 +106,6 @@ a {
 .abouttext {
   color: var(--text-color);
 }
-.öffnungszeiten {
-}
 
 .aboutimgs {
   display: flex;
@@ -132,7 +130,7 @@ a {
 }
 
 .openings {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./picture/info.jpg");
   display: flex;
   flex-direction: column;
@@ -142,6 +140,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding: 5rem 0 5rem 0;
 }
 .opening {
   display: grid;
