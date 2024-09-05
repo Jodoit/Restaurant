@@ -152,10 +152,12 @@ a {
 .days {
   color: var(--text-color);
   width: 2rem;
+  line-height: 1.2rem;
 }
 .time {
   color: var(--white-color);
   width: 6rem;
+  line-height: 1.2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -193,9 +195,11 @@ a {
   }
   .days {
     width: 3rem;
+    line-height: 2rem;
   }
   .time {
     width: 8rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {
