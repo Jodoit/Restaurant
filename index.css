@@ -172,10 +172,11 @@ a {
 }
 
 .contacttext {
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 10rem;
   color: var(--text-color);
   line-height: 2rem;
+  padding: 0 0 1rem 0;
 }
 
 .contact {
@@ -201,18 +202,34 @@ a {
   align-items: baseline;
   flex-direction: column;
   align-content: left;
+  max-width: 30rem;
 }
 .footer {
-  font-size: 0.8rem;
+  font-size: 10rem;
   color: var(--white-color);
   letter-spacing: 0.1rem;
+  background-color: rgb(61, 61, 61);
+  height: 100%;
   width: 100%;
-  background-color: grey;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 .footer:hover {
-  font-size: 0.8rem;
   color: var(--primary-color);
   transition: color 0.5s ease-out;
+}
+.footers {
+  background-color: rgb(61, 61, 61);
+}
+
+.copyright {
+  color: var(--text-color);
+  text-align: center;
+  padding: 2rem 0 2rem 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -274,6 +291,10 @@ a {
     align-items: center;
     text-align: left;
     justify-content: center;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 1200px) {
