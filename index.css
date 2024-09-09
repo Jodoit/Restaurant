@@ -45,9 +45,6 @@ body {
 }
 .button:hover {
   background-color: transparent;
-  padding: 10px;
-  font-size: 1rem;
-  color: var(--white-color);
   transition: background-color 0.5s ease-out;
 }
 .button1 {
@@ -60,9 +57,6 @@ body {
 }
 .button1:hover {
   background-color: var(--primary-color);
-  padding: 10px;
-  font-size: 1rem;
-  color: var(--white-color);
   transition: background-color 0.5s ease-out;
 }
 .pseudobutton1 {
