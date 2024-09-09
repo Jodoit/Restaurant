@@ -42,6 +42,7 @@ body {
   padding: 10px;
   border: 1px solid var(--primary-color);
   font-size: 1rem;
+  font-family: "Inter", sans-serif;
 }
 .button:hover {
   background-color: transparent;
@@ -55,6 +56,7 @@ body {
   border: 1px solid var(--primary-color);
   font-size: 1rem;
   color: var(--primary-color);
+  font-family: "Inter", sans-serif;
 }
 .button1:hover {
   background-color: var(--primary-color);
@@ -116,9 +118,12 @@ a {
   color: var(--white-color);
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.1rem;
 }
 .abouttext {
   color: var(--text-color);
+  font-family: "Inter", sans-serif;
 }
 
 .aboutimgs {
@@ -180,6 +185,7 @@ a {
   color: var(--text-color);
   line-height: 2rem;
   padding: 0 0 1rem 0;
+  font-family: "Inter", sans-serif;
 }
 
 .contact {
@@ -220,6 +226,7 @@ a {
   flex-direction: column;
   align-content: center;
   align-items: center;
+  font-family: "Inter", sans-serif;
 }
 .footer:hover {
   color: var(--primary-color);
@@ -233,6 +240,7 @@ a {
   color: var(--text-color);
   text-align: center;
   padding: 2rem 0 2rem 0;
+  font-family: "Inter", sans-serif;
 }
 
 @media screen and (min-width: 800px) {
@@ -311,14 +319,11 @@ a {
   }
 
   .nav1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 1.5rem;
   }
-  .nav1:hover {
-    font-size: 1.5rem;
-  }
   .nav {
-    gap: 10rem;
+    gap: 5rem;
   }
   .heading {
     font-size: 2.5rem;
