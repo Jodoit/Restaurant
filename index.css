@@ -58,6 +58,7 @@ body {
 .button1:hover {
   background-color: var(--primary-color);
   transition: background-color 0.5s ease-out;
+  color: var(--primary-color);
 }
 .pseudobutton1 {
   margin-top: 3rem;
@@ -84,7 +85,7 @@ a {
   text-decoration: none;
 }
 .nav {
-  background-color: rgb(33, 32, 32);
+  background-color: #1a1a1a;
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -208,6 +209,18 @@ a {
   align-items: baseline;
   flex-direction: column;
   align-content: left;
+}
+.footer {
+  font-size: 0.8rem;
+  color: var(--white-color);
+  letter-spacing: 0.1rem;
+  width: 100%;
+  background-color: grey;
+}
+.footer:hover {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  transition: color 0.5s ease-out;
 }
 
 @media screen and (min-width: 800px) {
