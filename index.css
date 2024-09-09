@@ -71,6 +71,9 @@ body {
 .pseudobutton3 {
   margin: 1rem 0 0 0;
 }
+.pseudobutton4 {
+  margin: 1rem 0 0 0;
+}
 
 * {
   margin: 0;
@@ -294,7 +297,8 @@ a {
   }
   .footer {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -334,8 +338,8 @@ a {
     display: flex;
     flex-direction: row;
   }
-  .pseudobutton3 {
-    margin-left: 1rem;
+  .pseudobutton4 {
+    margin: 1rem 0 0 1rem;
   }
 }
 @media screen and (min-width: 451px) {
