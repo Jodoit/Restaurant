@@ -37,14 +37,15 @@ body {
 }
 .button {
   display: inline-block;
+  color: var(--white-color);
   background-color: var(--primary-color);
   padding: 10px;
   border: 1px solid var(--primary-color);
   font-size: 1rem;
-  color: var(--white-color);
 }
 .button:hover {
   background-color: transparent;
+  color: var(--primary-color);
   transition: background-color 0.5s ease-out;
 }
 .button1 {
@@ -53,12 +54,12 @@ body {
   padding: 10px;
   border: 1px solid var(--primary-color);
   font-size: 1rem;
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 .button1:hover {
   background-color: var(--primary-color);
   transition: background-color 0.5s ease-out;
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 .pseudobutton1 {
   margin-top: 3rem;
@@ -69,12 +70,6 @@ body {
 }
 .pseudobutton3 {
   margin: 1rem 0 0 0;
-}
-.pseudobuttontext {
-  color: var(--white-color);
-}
-.pseudobuttontext1 {
-  color: var(--primary-color);
 }
 
 * {
